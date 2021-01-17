@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet,  Image, Text, View } from 'react-native';
+import { StyleSheet,  Image, Text, View, Pressable } from 'react-native';
 
 export default function App() {
   return (
@@ -12,10 +12,17 @@ export default function App() {
         source={require('./assets/picclo_logo_no_border.png')}
       />
       <Text style={stylesHome.pack}>Choose pack</Text>
-      <Text style={stylesHome.play}>Play</Text>
+      <Pressable onPress={play}>
+        <Text style={stylesHome.play}>Play</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );
+}
+
+function play() {
+  //onPress play
+
 }
 
 const stylesHome = StyleSheet.create({

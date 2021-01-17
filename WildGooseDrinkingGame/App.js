@@ -4,21 +4,21 @@ import { StyleSheet,  Image, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Beau en Marco</Text>
-      <Text style={styles.slogan}>"Drink it up"</Text>
+    <View style={stylesHome.container}>
+      <Text style={stylesHome.title}>Wild Goose Drinking</Text>
+      <Text style={stylesHome.slogan}>"Drink it up"</Text>
       <Image
-        style={styles.logo}
+        style={stylesHome.logo}
         source={require('./assets/picclo_logo_no_border.png')}
       />
-      <Text style={styles.pack}>Choose pack</Text>
-      <Text style={styles.play}>Play</Text>
+      <Text style={stylesHome.pack}>Choose pack</Text>
+      <Text style={stylesHome.play}>Play</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const stylesHome = StyleSheet.create({
   container: {
     flex: 1,
     display: 'flex',
@@ -53,7 +53,9 @@ const styles = StyleSheet.create({
   },
   play: {
   fontSize: 50,
-  color: '#ff8400'
+  color: '#ff8400',
+  marginTop: 20,
+  fontWeight: 'bold',
   },
 
 });

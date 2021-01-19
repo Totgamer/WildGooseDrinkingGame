@@ -15,12 +15,28 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Home' }}
+          options={{ title: 'Home',
+          headerStyle: {
+            backgroundColor: '#2d1c00',
+          },
+          headerTintColor: '#2d1c00',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+           }}
         />
         <Stack.Screen 
           name="Play" 
           component={PlayScreen} 
-          options={{ title: 'Play Game' }}
+          options={{ title: 'Play Game',
+          headerStyle: {
+            backgroundColor: '#2d1c00',
+          },
+          headerTintColor: '#2d1c00',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+           }}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -50,12 +66,12 @@ function PlayScreen() {
     <View style={styles.container}>
       <View style={styles.border}>
         <View style={styles.innerBorder}>
-          <Text style={styles.title}>Play Game</Text>
-          <Text style={styles.slogan}>"Drink it up"</Text>
           <Image
-            style={styles.logo}
+            style={styles.logoSmall}
             source={require('./assets/picclo_logo_no_border.png')}
           />
+          <Text style={styles.title}>Play Game</Text>
+          <Text style={styles.slogan}>"Drink it up"</Text>
           <AppButton title="Volgende"/>
         </View>
       </View>
@@ -81,14 +97,18 @@ const styles = StyleSheet.create({
   },
 
   border: {
+    height: '90%',
+    width: '90%',
     backgroundColor: '#ff8400',
     borderRadius: 20,
   },
 
   innerBorder: {
+    height: '94%',
     backgroundColor: '#2d1c00',
     margin: 20,
     borderRadius: 10,
+    
   },
 
   title: {
@@ -108,8 +128,14 @@ const styles = StyleSheet.create({
     height: 300,
     width: 300,
     margin: 40,
-    
   }, 
+
+  logoSmall: {
+    height: 60,
+    width: 60,
+    marginTop: 15,
+    marginLeft: 15,
+  },
   
   pack: {
     color: '#ffc689',
@@ -125,12 +151,13 @@ const styles = StyleSheet.create({
 
   appButtonContainer: {
     width: 250,
-    marginTop: 20,
     elevation: 8,
     backgroundColor: "#ff8400",
     borderRadius: 10,
     paddingVertical: 10,
-    paddingHorizontal: 12
+    paddingHorizontal: 12,
+    marginBottom: 25,
+    margin: 'auto',
   },
 
   appButtonText: {

@@ -1,21 +1,15 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet,  Image, Text, View, Pressable, TouchableOpacity, FlatList } from 'react-native';
 // nav imports
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import opdrachten from './data/opdrachten.json';
 
-
-
-
 const Stack = createStackNavigator();
-// Json Import/Fetch data
-// const opdrachtData = require('./opdrachten.json');
-// import data from './customData.json';
 
-
+// render pages into main app
 export default function App() {
   return (
     <NavigationContainer>
@@ -36,14 +30,10 @@ export default function App() {
         />
         <Stack.Screen 
           name="Play" 
-          component={PlayScreen} 
+          component={StatefullPlayScreen} 
           options={{ title: 'Play Game',
           headerStyle: {
             backgroundColor: '#2d1c00',
-          //   headerTitle: (props) => (<Image
-          //   style={styles.logoSmall}
-          //   source={require('./assets/picclo_logo_no_border.png')}
-          // />),
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -57,7 +47,7 @@ export default function App() {
   );
 }
 
-// pages
+//Home page page
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
@@ -76,32 +66,35 @@ function HomeScreen({ navigation }) {
   );
 };
 
-function PlayScreen() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.border}>
-        <View style={styles.innerBorder}> 
-          <Image
-            style={styles.logoSmall}
-            source={require('./assets/picclo_logo_no_border.png')}
-          />
-          {/* <Text style={styles.mainText}>Nieuwe regel:{"\n\n"}elke keer als iemand een zin zonder "Goose" begint 1 shotje</Text> */}
-          <FlatList
-             data={opdrachten}
-             showsVerticalScrollIndicator={false}
-             renderItem={({item}) =>
-                <View >
-                 <Text style={styles.mainText}>{item.name}</Text>
-                </View>
-             }
-             keyExtractor={(item, index) => index.toString()}
-           />
-          <AppButton title="Volgende"/>
+class StatefullPlayScreen extends Component {
+  constructor() {
+    super()
+    this.state = {
+      title: 'Druk Volgende om het spel te starten!'
+    }
+  }
+
+  updateText() {
+    var RandomNumber = Math.floor(Math.random() * 5) ;
+    this.setState({title: opdrachten[RandomNumber].name});
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.border}>
+          <View style={styles.innerBorder}> 
+            <Image
+              style={styles.logoSmall}
+              source={require('./assets/picclo_logo_no_border.png')}
+            />
+            <Text style={styles.mainText}>{this.state.title}</Text>
+            <AppButton onPress={() => {this.updateText()}} title="Volgende"/>
+          </View>
         </View>
       </View>
-    </View>
-  );
-};
+    );
+  }
+}
 
 // custom button
 const AppButton = ({ onPress, title }) => (
@@ -111,6 +104,8 @@ const AppButton = ({ onPress, title }) => (
     <Text style={styles.appButtonText}>{title}</Text>
   </TouchableOpacity>
 );
+
+
 
 //style sheet
 const styles = StyleSheet.create({

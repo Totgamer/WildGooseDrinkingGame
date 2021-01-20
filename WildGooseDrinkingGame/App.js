@@ -1,12 +1,20 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet,  Image, Text, View, Pressable, TouchableOpacity } from 'react-native';
+import { StyleSheet,  Image, Text, View, Pressable, TouchableOpacity, FlatList } from 'react-native';
 // nav imports
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import opdrachten from './data/opdrachten.json';
+
+
+
 
 const Stack = createStackNavigator();
+// Json Import/Fetch data
+// const opdrachtData = require('./opdrachten.json');
+// import data from './customData.json';
+
 
 export default function App() {
   return (
@@ -19,9 +27,10 @@ export default function App() {
           headerStyle: {
             backgroundColor: '#2d1c00',
           },
-          headerTintColor: '#2d1c00',
+          headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
+            color: '#2d1c00',
           },
            }}
         />
@@ -31,10 +40,15 @@ export default function App() {
           options={{ title: 'Play Game',
           headerStyle: {
             backgroundColor: '#2d1c00',
+          //   headerTitle: (props) => (<Image
+          //   style={styles.logoSmall}
+          //   source={require('./assets/picclo_logo_no_border.png')}
+          // />),
           },
-          headerTintColor: '#2d1c00',
+          headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
+            color: '#2d1c00',
           },
            }}
         />
@@ -43,6 +57,7 @@ export default function App() {
   );
 }
 
+// pages
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
@@ -53,9 +68,9 @@ function HomeScreen({ navigation }) {
         source={require('./assets/picclo_logo_no_border.png')}
       />
       <Text style={styles.pack}>Choose pack</Text>
-      <Pressable onPress={() => navigation.navigate('Play')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Play')}>
         <Text style={styles.play}>Play</Text>
-      </Pressable>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
@@ -65,13 +80,22 @@ function PlayScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.border}>
-        <View style={styles.innerBorder}>
+        <View style={styles.innerBorder}> 
           <Image
             style={styles.logoSmall}
             source={require('./assets/picclo_logo_no_border.png')}
           />
-          <Text style={styles.title}>Play Game</Text>
-          <Text style={styles.slogan}>"Drink it up"</Text>
+          {/* <Text style={styles.mainText}>Nieuwe regel:{"\n\n"}elke keer als iemand een zin zonder "Goose" begint 1 shotje</Text> */}
+          <FlatList
+             data={opdrachten}
+             showsVerticalScrollIndicator={false}
+             renderItem={({item}) =>
+                <View >
+                 <Text style={styles.mainText}>{item.name}</Text>
+                </View>
+             }
+             keyExtractor={(item, index) => index.toString()}
+           />
           <AppButton title="Volgende"/>
         </View>
       </View>
@@ -79,6 +103,7 @@ function PlayScreen() {
   );
 };
 
+// custom button
 const AppButton = ({ onPress, title }) => (
   <TouchableOpacity 
     onPress={onPress} 
@@ -87,6 +112,7 @@ const AppButton = ({ onPress, title }) => (
   </TouchableOpacity>
 );
 
+//style sheet
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -104,7 +130,7 @@ const styles = StyleSheet.create({
   },
 
   innerBorder: {
-    height: '94%',
+    height: '93.5%',
     backgroundColor: '#2d1c00',
     margin: 20,
     borderRadius: 10,
@@ -122,6 +148,17 @@ const styles = StyleSheet.create({
     color: '#ffc689',
     fontSize: 25,
     marginTop: 20,
+  },
+
+  mainText: {
+    textAlign: 'center',
+    marginTop: '40%',
+    marginBottom: '50%',
+    color: '#ffc689',
+    fontSize: 30,
+    fontWeight: 'bold',
+    paddingLeft: 15,
+    paddingRight: 15,
   },
 
   logo: {
@@ -145,19 +182,20 @@ const styles = StyleSheet.create({
   play: {
   fontSize: 50,
   color: '#ff8400',
-  marginTop: 20,
+  marginTop: 15,
   fontWeight: 'bold',
   },
 
   appButtonContainer: {
-    width: 250,
+    width: '80%',
     elevation: 8,
     backgroundColor: "#ff8400",
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginBottom: 25,
-    margin: 'auto',
+    position: 'absolute',
+    bottom: 25,
+    marginLeft: '10%',
   },
 
   appButtonText: {

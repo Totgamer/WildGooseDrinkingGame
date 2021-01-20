@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name": "Wordt dronken binnen 4 minuten",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 2,
+        "name": "Doe een salto",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 3,
+        "name": "Elke keer als iemand niet op zijn naam reageert moet deze een shotje nemen",
+        "type": "regel",
+        "rondes": 3
+    },
+    {
+        "id": 4,
+        "name": "",
+        "type": "",
+        "rondes": 0
+    }
+]

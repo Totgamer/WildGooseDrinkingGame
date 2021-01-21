@@ -75,9 +75,39 @@ class StatefullPlayScreen extends Component {
   }
 
   updateText() {
-    var RandomNumber = Math.floor(Math.random() * 5) ;
-    this.setState({title: opdrachten[RandomNumber].name});
+    var users = [
+      {
+        "username": 'Marco',
+        "gender": 0
+      },
+      {
+        "username": 'Beau',
+        "gender": 0
+      },
+      {
+        "username": 'Quinn',
+        "gender": 1
+      }
+    ]
+
+    var RandomNumber = Math.floor(Math.random() * opdrachten.length);
+    var u1 = Math.floor(Math.random() * users.length);
+    var u2 = Math.floor(Math.random() * users.length);
+    var SampleText = opdrachten[RandomNumber].name;
+
+    if(users[u1].username == users[u2].username) {
+      while(u1 == u2){
+        var u1 = Math.floor(Math.random() * users.length);
+        var u2 = Math.floor(Math.random() * users.length);
+      }
+    } else {
+      var NewText = SampleText.replace("USERNAME_1", users[u1].username);
+      var FinalText = NewText.replace("USERNAME_2", users[u2].username);
+   
+      this.setState({title: FinalText});
+    }
   }
+
   render() {
     return (
       <View style={styles.container}>

@@ -8,6 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import opdrachten from './data/opdrachten.json';
 
 const Stack = createStackNavigator();
+var turnCount = 0;
 
 // render pages into main app
 export default function App() {
@@ -85,6 +86,19 @@ class StatefullPlayScreen extends Component {
         "gender": 0
       },
       {
+        "username": 'Antonie',
+        "gender": 0
+      },
+      {
+        "username": 'Inge',
+        "gender": 1
+      },
+      {
+        "username": 'Tessa',
+        "gender": 1
+      },
+      
+      {
         "username": 'Quinn',
         "gender": 1
       }
@@ -95,15 +109,18 @@ class StatefullPlayScreen extends Component {
     var u2 = Math.floor(Math.random() * users.length);
     var SampleText = opdrachten[RandomNumber].name;
 
-    if(users[u1].username == users[u2].username) {
-      while(u1 == u2){
-        var u1 = Math.floor(Math.random() * users.length);
-        var u2 = Math.floor(Math.random() * users.length);
-      }
-    } else {
+    while(u1 == u2){
+      u1 = Math.floor(Math.random() * users.length);
+      u2 = Math.floor(Math.random() * users.length);
+      console.log('Same user!');
+    }
+
+    if(users[u1].username != users[u2].username) {
       var NewText = SampleText.replace("USERNAME_1", users[u1].username);
       var FinalText = NewText.replace("USERNAME_2", users[u2].username);
-   
+
+      turnCount++;
+      console.log(turnCount);
       this.setState({title: FinalText});
     }
   }

@@ -5,35 +5,30 @@
         "id":1,
         "name": "Wordt dronken binnen 4 minuten",
         "type": "drink",
-        "rondes": 0,
-        "gender": 2
+        "rondes": 0
     },
     {
         "id": 2,
         "name": "Doe een salto",
         "type": "doen",
-        "rondes": 0,
-        "gender": 2
+        "rondes": 0
     },
     {
         "id": 3,
         "name": "Elke keer als iemand niet op zijn naam reageert moet Deze persoon een slok nemen",
         "type": "regel",
-        "rondes": 3,
-        "gender": 2
+        "rondes": 3
     },
     {
         "id": 4,
         "name": "USERNAME_1 en USERNAME_2 moeten zoenen.\n\nAls zij dit niet doen moeten bijde 2 slokken nemen",
         "type": "doen",
-        "rondes": 0,
-        "gender": 3
+        "rondes": 0
     },
     {
         "id": 5,
         "name": "USERNAME_1 en USERNAME_2 moeten een foto maken.\n\nDeze foto moet op een insta of snap story komen te staan",
         "type": "doen",
-        "rondes": 0,
-        "gender": 3
+        "rondes": 0
     }
 ]

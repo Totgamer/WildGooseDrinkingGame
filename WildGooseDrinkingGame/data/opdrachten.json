@@ -3,19 +3,19 @@
     
     {
         "id":1,
-        "name": "Wordt dronken binnen 4 minuten",
-        "type": "drink",
+        "name": "USERNAME_1, doe en handstand en neem een slok.\n\n Lukt dit niet neem dan 4 slokken",
+        "type": "doen",
         "rondes": 0
     },
     {
         "id": 2,
-        "name": "Doe een salto",
+        "name": "USERNAME_1, Doe een koprol achteruit",
         "type": "doen",
         "rondes": 0
     },
     {
         "id": 3,
-        "name": "Elke keer als iemand niet op zijn naam reageert moet Deze persoon een slok nemen",
+        "name": "Regel:\n\nElke keer als iemand niet op zijn naam reageert moet Deze persoon een slok nemen",
         "type": "regel",
         "rondes": 3
     },
@@ -29,6 +29,288 @@
         "id": 5,
         "name": "USERNAME_1 en USERNAME_2 moeten een foto maken.\n\nDeze foto moet op een insta of snap story komen te staan",
         "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 6,
+        "name": "Leg alle telefoons naast elkaar op tafel. \n\nDegene die als eerst een melding krijgt moet een shotje nemen",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 7,
+        "name": "Alle meiden mogen iemand uitkiezen die 3 slokken moeten nemen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 8,
+        "name": "Iedereen die witte schoenen aan hebben nemen 1 slok",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 9,
+        "name": "USERNAME_1 en USERNAME_2 moeten voetgrootte vergelijken. \n\nWie de grootste voeten heeft moet 2 slokken nemen",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 10,
+        "name": "USERNAME_1 trekt de sokken van USERNAME_2 uit met zijn/haar tanden. \n\nOf neem 3 slokken ",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 11,
+        "name": "USERNAME_1, trek een kledingstuk uit. \n\nOf neem een shotje",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 12,
+        "name": "USERNAME_1 lik de persoon rechts van je op de wang",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 13,
+        "name": "Iedereen neem net zoveel slokken als het aantal mensen dat aanwezig is die je zal doen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 14,
+        "name": "USERNAME_1, trek je shirt uit tot je naam weer wordt genoemd. \n\nOf neem 4 slokken",
+        "type": "doen",
+        "rondes": 0
+    },  
+    {
+        "id": 15,
+        "name": "USERNAME_1, stel een Truth vraag aan USERNAME_2",
+        "type": "doen",
+        "rondes": 0
+    },  
+    {
+        "id": 16,
+        "name": "Tijd voor een atje! \n\n Iedereen moet een atje doen",
+        "type": "drink",
+        "rondes": 0
+    },  
+    {
+        "id": 17,
+        "name": "USERNAME_1, USERNAME_2 en USERNAME_3, neem net zoveel slokken als het aantal exen dat je hebt",
+        "type": "drink",
+        "rondes": 0
+    },  
+    {
+        "id": 18,
+        "name": "USERNAME_1, ga twerken voor USERNAME_2 \n\nOf neem 3 slokken",
+        "type": "doen",
+        "rondes": 0
+    },  
+    {
+        "id": 19, 
+        "name": "USERNAME_1, schreeuw iets uit het raam dat USERNAME_2 heeft verzonnen",
+        "type": "doen",
+        "rondes": 0
+    },  
+    {
+        "id": 20,
+        "name": "USERNAME_1 en USERNAME_2 zijn nu een siamese tweeling. \n\nAls een van de twee moet drinken moet de ander dat ook doen",
+        "type": "regel",
+        "rondes": 0
+    },  
+    {
+        "id": 21,
+        "name": "USERNAME_1, geef USERNAME_2 een massage tot je naam weer wordt genoemd",
+        "type": "regel",
+        "rondes": 0
+    },  
+    {
+        "id": 22,
+        "name": "Iedereen die keiner is dan USERNAME_1 moet 3 slokken nemen",
+        "type": "drink",
+        "rondes": 0
+    },  
+    {
+        "id": 23,
+        "name": "USERNAME_1, doe de gangnamstyle voor 10 seconden",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 22,
+        "name": "USERNAME_1, vertel je meest schamende moment",
+        "type": "doen",
+        "rondes": 0
+    }, 
+    {
+        "id": 23,
+        "name": "USERNAME_1, verzin een dare voor USERNAME_2",
+        "type": "doen",
+        "rondes": 0
+    }, 
+    {
+        "id": 24,
+        "name": "USERNAME_1, ga in een yoga pose staan totdat je naam wordt genoemd",
+        "type": "regel",
+        "rondes": 0
+    },
+    {
+        "id": 25,
+        "name": "De sterkste uit de groep moet 5 slokken nemen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 26,
+        "name": "Alle mannen moeten evenveel slokken nemen als dat er knappe vrouwen zijn",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 27,
+        "name": "USERNAME_1, strip down tot je ondergoed.\n\nOf neem 2 shotjes",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 28,
+        "name": "De kleinste en grootste mogen beiden 2 slokken uitdelen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 29,
+        "name": "Iedereen met de letter A in hun achternaam doet een atje",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 30,
+        "name": "USERNAME_1 moet snacks regelen",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 31,
+        "name": "USERNAME_1, vertel je beste pick-up line aan de knapste van de groep",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 32,
+        "name": "De mannen mogen een shotje uitdelen aan de 3 knapste meiden",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 33,
+        "name": "USERNAME_1 en USERNAME_2 moeten bijde hun favorite seks positie voordoen met elkaar",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 34,
+        "name": "USERNAME_1 moet zijn/haar meest pikante foto zien aan USERNAME_2",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 35,
+        "name": "Iedereen behalve USERNAME_1 moet een atje doen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 36,
+        "name": "USERNAME_1, noem iedereen zijn voornaam op.\n\nAls dit niet lukt 3 slokken",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 37,
+        "name": "Iedereen noem om de beurt een supermarkt op. Degene die niks meer kan bedenken moet 2 slokken nemen.\n\n USERNAME_1 start",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 38,
+        "name": "USERNAME_1 moet al zijn slokken voor 2 beurten aan USERNAME_2 geven",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 39,
+        "name": "USERNAME_1, USERNAME_2 en USERNAME_3 moeten de volgende keer dat zij moeten drinken 2x zoveel drinken",
+        "type": "regel",
+        "rondes": 0
+    },
+    {
+        "id": 40,
+        "name": "Elke speler met een rijbewijs mag 2 slokken uitdelen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 41,
+        "name": "USERNAME_1, Lees je laats verstuurde DM hardop voor",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 42,
+        "name": "Elke meid die in de mood is neemt een slok",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 43,
+        "name": "alle jongens die een stijve hebben nemen een slok",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 44,
+        "name": "USERNAME_1, ga opschoot zitten bij de speler links van je",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 45,
+        "name": "Neem een shotje als je iemand ontmaagd hebt",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 46,
+        "name": "USERNAME_1 kiest uit wie USERNAME_2 moet bellen uit zijn contacten.\n\nHierbij verteld hij/zei gevoelens te hebben voor deze persoon",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 47,
+        "name": "Iedereen die 'het' vanavond gaat doen neemt 4 slokken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 48,
+        "name": "USERNAME_1, geef USERNAME_2 een lapdance",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 49,
+        "name": "USERNAME_1, ga tussen 2 meiden inzitten.\n\nIndien dit niet mogelijk is neem 2 slokken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 50,
+        "name": "USERNAME_1, ga tussen 2 jongens inzitten.\n\nIndien dit niet mogelijk is neem 2 slokken",
+        "type": "drink",
         "rondes": 0
     }
 ]

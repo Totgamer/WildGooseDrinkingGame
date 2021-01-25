@@ -12,7 +12,7 @@ import { color } from 'react-native-reanimated';
 const Stack = createStackNavigator();
 var turnCount = 0;
 
-var users = []
+var users = [];
 
 
 // render pages into main app
@@ -123,7 +123,7 @@ class nameScreen extends Component {
           source={require('./assets/picclo_logo_no_border.png')}
         />
         <Text style={styles.nameAddTitle}>Players</Text>
-        <View styles={styles.nameList}>
+        <View style={styles.nameList}>
           {this.state.usersList.map((user, index) => (
             <Text style={styles.names} onPress={() => {this.removeUser(index)}} key={index}>{user.username}<Text style={styles.delete}>X</Text></Text>
           ))}
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     fontWeight: 'bold',
     padding: 5,
-    marginBottom: 5,
+    margin: 5,
     backgroundColor: '#ffc689',
     borderColor: '#ff8400',
     borderWidth: 5,
@@ -407,6 +407,7 @@ const styles = StyleSheet.create({
   nameList: {
     display: 'flex',
     flexWrap: 'wrap',
-    flex: 1
+    flexDirection: 'row',
+    justifyContent: 'center'
   }
 });

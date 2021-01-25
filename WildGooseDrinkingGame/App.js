@@ -24,15 +24,17 @@ export default function App() {
           name="Home"
           component={homeScreen}
           options={{ title: '',
-          headerStyle: {
-            backgroundColor: '#2d1c00',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-            color: '#2d1c00',
-          },
-           }}
+            headerStyle: {
+              backgroundColor: '#2d1c00',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              color: '#2d1c00',
+            },
+            },
+            {headerShown: false}
+          }
         />
         <Stack.Screen
           name="Names"
@@ -113,6 +115,14 @@ class nameScreen extends Component {
     users = this.state.usersList
   }
 
+  startGame() {
+    if(users.length >= 3) {
+      this.props.navigation.navigate('Play');
+    } else {
+      alert("Minimum amout of users is 3");
+    }
+  }
+
 
   render() {
     const usrs = this.state
@@ -134,7 +144,7 @@ class nameScreen extends Component {
           placeholder="Enter Name" 
           style={styles.inputField}/>
         <AppButton onPress={() => {this.addUser(this.state.text)}} title="Gebruiker toevoegen"/>
-        <AppButtonVolgende onPress={() => this.props.navigation.navigate('Play')} title="Volgende"/>
+        <AppButtonVolgende onPress={() => this.startGame()} title="Volgende"/>
       </View>
     );
   }
@@ -261,7 +271,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#ffc689',
     fontSize: 25,
-    marginTop: 20,
+    marginTop: '5%',
   },
 
   mainText: {
@@ -282,7 +292,8 @@ const styles = StyleSheet.create({
   logo: {
     height: 300,
     width: 300,
-    margin: 40,
+    marginTop: '10%',
+    marginBottom: '10%'
   }, 
 
   logoSmall: {
@@ -308,7 +319,7 @@ const styles = StyleSheet.create({
   play: {
   fontSize: 50,
   color: '#ff8400',
-  marginTop: 15,
+  marginTop: '2%',
   fontWeight: 'bold',
   },
 
@@ -321,7 +332,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     position: 'absolute',
     bottom: 25,
-    marginLeft: '5%',
   },
 
   appButtonText: {
@@ -341,7 +351,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     position: 'absolute',
     bottom: 85,
-    marginLeft: '5%',
   },
 
   appButtonText2: {
@@ -352,19 +361,6 @@ const styles = StyleSheet.create({
     textTransform: "uppercase"
   },
 
-  inputField: {
-    height: 50,
-    width: '80%',
-    fontSize: 20,
-    backgroundColor: '#ffc689',
-    borderColor: '#ff8400',
-    borderWidth: 5,
-    borderRadius: 20,
-    fontWeight: 'bold',
-    color: '#2d1c00',
-    textAlign: 'center',
-    marginBottom: 15
-  },
   appButtonContainer3: {
     width: '80%',
     elevation: 8,
@@ -385,6 +381,20 @@ const styles = StyleSheet.create({
     textTransform: "uppercase"
   },
 
+  inputField: {
+    height: 50,
+    width: '80%',
+    fontSize: 20,
+    backgroundColor: '#ffc689',
+    borderColor: '#ff8400',
+    borderWidth: 5,
+    borderRadius: 20,
+    fontWeight: 'bold',
+    color: '#2d1c00',
+    textAlign: 'center',
+    marginBottom: 15
+  },
+
   names: {
     color: '#ff8400',
     fontSize: 20,
@@ -399,8 +409,8 @@ const styles = StyleSheet.create({
   },
 
   delete: {
-    marginLeft: 10,
-    marginRight: 5,
+    paddingLeft: 10,
+    paddingRight: 5,
     color: '#ac5c00'
   },
 

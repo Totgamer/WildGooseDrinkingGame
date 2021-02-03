@@ -2,12 +2,16 @@ import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-import { StyleSheet,  Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet,  Image, Text, View, TouchableOpacity, TextInput} from 'react-native';
 // nav imports
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import opdrachten from './data/opdrachten.json';
 import { color } from 'react-native-reanimated';
+import { FlatList } from 'react-native-gesture-handler';
+// responsive
+// import "@expo/match-media";
+// import { useMediaQuery } from "react-responsive";
 
 const Stack = createStackNavigator();
 var turnCount = 0;
@@ -77,7 +81,7 @@ function homeScreen({ navigation }) {
       <Text style={styles.slogan}>"Drink it up"</Text>
       <Image
         style={styles.logo}
-        source={require('./assets/picclo_logo_no_border.png')}
+        source={require('./assets/logo_no_border.png')}
       />
       <Text style={styles.pack}>Choose pack</Text>
       <TouchableOpacity onPress={() => navigation.navigate('Names')}>
@@ -92,7 +96,7 @@ function homeScreen({ navigation }) {
 class nameScreen extends Component {
   state = {
     usersList: [{
-      username: "Martijn"
+      username: "Delete names by clicking"
     }]
   }
 
@@ -125,17 +129,16 @@ class nameScreen extends Component {
 
 
   render() {
-    const usrs = this.state
     return (
       <View style={styles.container}>
         <Image
           style={styles.logoSmallFixed}
-          source={require('./assets/picclo_logo_no_border.png')}
+          source={require('./assets/logo_no_border.png')}
         />
         <Text style={styles.nameAddTitle}>Players</Text>
         <View style={styles.nameList}>
           {this.state.usersList.map((user, index) => (
-            <Text style={styles.names} onPress={() => {this.removeUser(index)}} key={index}>{user.username}<Text style={styles.delete}>X</Text></Text>
+            <Text style={styles.names} onPress={() => {this.removeUser(index)}} key={index}>{user.username} <Text style={styles.delete}>X </Text></Text>
           ))}
         </View>
         <TextInput 
@@ -191,10 +194,15 @@ class StatefullPlayScreen extends Component {
           <View style={styles.innerBorder}> 
             <Image
               style={styles.logoSmallFixed}
-              source={require('./assets/picclo_logo_no_border.png')}
+              source={require('./assets/logo_no_border.png')}
             />
             <Text style={styles.mainText}>{this.state.title}</Text>
-            <AppButtonNextCard onPress={() => {this.updateText()}} title="Volgende"/>
+            <AppButtonNextCard 
+              onPress={() => {
+                this.updateText()
+              }} 
+              title="Volgende"
+            />
           </View>
         </View>
       </View>
@@ -276,8 +284,8 @@ const styles = StyleSheet.create({
 
   mainText: {
     textAlign: 'center',
-    marginTop: '50%',
-    marginBottom: '50%',
+    marginTop: '40%',
+    marginBottom: '40%',
     color: '#ffc689',
     fontSize: 30,
     fontWeight: 'bold',
@@ -396,8 +404,8 @@ const styles = StyleSheet.create({
   },
 
   names: {
-    color: '#ff8400',
-    fontSize: 20,
+    color: '#ac5c00',
+    fontSize: 15,
     borderRadius: 15,
     fontWeight: 'bold',
     padding: 5,
@@ -409,9 +417,7 @@ const styles = StyleSheet.create({
   },
 
   delete: {
-    paddingLeft: 10,
-    paddingRight: 5,
-    color: '#ac5c00'
+    color: '#ff8400'
   },
 
   nameList: {

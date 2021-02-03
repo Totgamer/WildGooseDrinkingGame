@@ -1,6 +1,4 @@
-
 [
-    
     {
         "id":1,
         "name": "USERNAME_1, doe en handstand en neem een slok.\n\n Lukt dit niet neem dan 4 slokken",
@@ -15,7 +13,7 @@
     },
     {
         "id": 3,
-        "name": "Regel:\n\nElke keer als iemand niet op zijn naam reageert moet Deze persoon een slok nemen",
+        "name": "Regel:\n\nElke keer als iemand niet op zijn naam reageert moet deze persoon een slok nemen. Regel geld voor 3 beurten",
         "type": "regel",
         "rondes": 3
     },
@@ -45,7 +43,7 @@
     },
     {
         "id": 8,
-        "name": "Iedereen die witte schoenen aan hebben nemen 1 slok",
+        "name": "Iedereen die witte schoenen aan heeft neemt 1 slok",
         "type": "drink",
         "rondes": 0
     },
@@ -57,7 +55,7 @@
     },
     {
         "id": 10,
-        "name": "USERNAME_1 trekt de sokken van USERNAME_2 uit met zijn/haar tanden. \n\nOf neem 3 slokken ",
+        "name": "USERNAME_1 trekt de sokken van USERNAME_2 uit met zijn/haar tanden. \n\nOf neemt 3 slokken ",
         "type": "doen",
         "rondes": 0
     },
@@ -69,7 +67,7 @@
     },
     {
         "id": 12,
-        "name": "USERNAME_1 lik de persoon rechts van je op de wang",
+        "name": "USERNAME_1, lik de persoon rechts van je op de wang",
         "type": "doen",
         "rondes": 0
     },
@@ -213,7 +211,7 @@
     },
     {
         "id": 34,
-        "name": "USERNAME_1 moet zijn/haar meest pikante foto zien aan USERNAME_2",
+        "name": "USERNAME_1 moet zijn/haar meest pikante foto laten zien aan USERNAME_2",
         "type": "doen",
         "rondes": 0
     },
@@ -312,5 +310,192 @@
         "name": "USERNAME_1, ga tussen 2 jongens inzitten.\n\nIndien dit niet mogelijk is neem 2 slokken",
         "type": "drink",
         "rondes": 0
+    },
+    {
+        "id": 51,
+        "name": "Vloer is lava! \n\nDe laatste 2 spelers die van de grond af zijn nemen een atje",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 52,
+        "name": "Vloer is lava! \n\nDe laatste 2 spelers die van de grond af zijn nemen een atje",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 53,
+        "name": "De Slet/Gigolo van de groep neemt 2 slokken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 54,
+        "name": "iedereen doe een kledingstuk uit",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 55,
+        "name": "USERNAME_1, USERNAME_2 en USERNAME_3 ruil elkaars shirt om binnen 30 seconde.\n\nLukt dit mogen jullie alle 2 slokken uitdelen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 56,
+        "name": "alle meisjes drinken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 57,
+        "name": "USERNAME_1 dans voor 30 sec op een tafel of stoel",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 58,
+        "name": "alle jongens drinken",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 59,
+        "name": "USERNAME_1 ruil je shirt met USERNAME_2",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 60,
+        "name": "sla de persoon links van je ",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 61,
+        "name": "iedereen neem 3 shotjes",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 62,
+        "name": "USERNAME_1 neem 2 shotjes",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 63,
+        "name": "USERAME_1 kies iemand om 2 shotjes te nemen ",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 64,
+        "name": "USERNAME_1 gooi een dobbelsteen en neem dat aantal shotjes ",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 65,
+        "name": "Alle regels vervallen.\n\n Indien er geen regels zijn mag USERNAME_1 een regel maken",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 66,
+        "name": "USERNAME_1 kies iemand om een shottje mee te doen",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 67,
+        "name": "De persoon met het minste in zijn of haar glas mag het glas gelijk leeg drinken",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 68,
+        "name": "Bluf!\n\n USERNAME_1 en USERNAME_2 wie van jullie kan de meeste kleding uittrekken binnen 30 seconden? \n\n Winnaar mag volgende beurt namen verwisselen",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 69,
+        "name": "Roulette \n\n USERNAME_1 en USERNAME_2 roepen tegelijkertijd rood of zwart. Als bijde dezelfde kleur hebben mogen ze bijde 3 slokken uitdelen",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 70,
+        "name": "USERNAME_1 kies iemand om een atje mee te doen",
+        "type": "drink",
+        "rondes": 0
+    }, 
+    {
+        "id": 71,
+        "name": "USERNAME_1 en USERNAME_2, kies beide iemand om een atje mee te doen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 72,
+        "name": "Idereen neem net zoveel slokken als sieraden dat je om hebt",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 73,
+        "name": "Piggy ride \n\n USERNAME_1 ga op de rug van USERNAME_2 en loop een rondje.",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 74,
+        "name": "USERNAME_1 en USERNAME_2 moeten armpje drukken.\n\nVerliezer neemt 2 slokken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 75,
+        "name": "USERNAME_1 draai 10 rondjes en loop naar USERNAME_2",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 76,
+        "name": "Idereen gaat nu jongen meisje zitten",
+        "type": "doen",
+        "rondes": 0
+    },
+    {
+        "id": 77,
+        "name": "Geluksvogel!\n\nAls je nu tussen 2 meiden zit mag je een shotje uitdelen",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 78,
+        "name": "USERNAME_1, noem een kleur op de persoon die als laatste de kleur aanraakt trekt 1 kledings stuk uit",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 79,
+        "name": "Hoedje van de koning!\n\nLaatste neemt 2 slokken",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 80,
+        "name": "Simon says!\n\nUSERNAME_1, probeer idereen eruit te spelen in 5 beurten.\n\nlukt dit niet neem dan voor elke overblijver een slok",
+        "type": "drink",
+        "rondes": 0
+    },
+    {
+        "id": 81,
+        "name": "USERNAME_1 geef een striptease aan de gene links van je",
+        "type": "drink",
+        "rondes": 0
     }
+   
 ]
